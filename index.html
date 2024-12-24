@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+
+        body {
+              display: flex;
+              height: 550px;
+              align-items: center;
+              justify-content: center;
+        }
+        .container {
+              display: flex;
+              height: 550px;
+              align-items: center;
+              justify-content: center;
+        }
+
+        
+
+        .container img {
+             height: 350px;
+             width: 350px;
+             transform-origin: center;
+             transition: 0.5s;
+             box-shadow: 0px 0px 8px grey;
+             border-radius: 5px;
+             transform: perspective(800px) rotateY(20deg);
+             
+        }
+
+        .container:hover > img {
+            opacity: 0.3;
+        }
+
+        .container img:hover {
+            transform: perspective(800px) rotateY(0deg);
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="img1" src="image/81M1evI0qJL._UX679_.jpg" alt="">
+        <img class="img2" src="image/il_fullxfull.2947254491_3h0z.webp" alt="">
+        <img class="img3" src="image/il_fullxfull.4341390936_pe43.webp" alt="">
+    </div>
+</body>
+</html>
